@@ -107,3 +107,9 @@
   justify-content: center;
   cursor: pointer;
 }
+
+.section-title a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
