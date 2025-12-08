@@ -69,23 +69,24 @@
     <div class="kategori-grid">
 
         <div class="kategori-card">
+        <a href="/kamera">
             <h3>Kamera</h3>
             <p>DSLR, Mirrorless</p>
+        </a>
         </div>
 
         <div class="kategori-card">
+        <a href="/lighting">
             <h3>Pencahayaan</h3>
             <p>Flash, LED Studio</p>
+        </a>
         </div>
 
         <div class="kategori-card">
+        <a href="/modifier">
             <h3>Modifier</h3>
             <p>Softbox, Umbrella</p>
-        </div>
-
-        <div class="kategori-card">
-            <h3>Aksesoris</h3>
-            <p>Tripod, Stand</p>
+        </a>
         </div>
 
     </div>

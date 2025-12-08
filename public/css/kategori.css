@@ -1,0 +1,114 @@
+.camera-page {
+    width: 90%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.breadcrumb p {
+    font-size: 14px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.title span {
+    text-decoration: underline;
+}
+
+.title p {
+    font-size: 12px;
+    color: #505050;
+}
+
+.category-btn {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.category-btn button {
+    background: #fff;
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-btn button:hover,
+.category-btn .active {
+    background: #dfe6f6;
+}
+
+.category-btn button.active {
+    background: #dfe6f6;
+}
+
+.category-btn button {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.camera-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #000;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin: 10px 0 4px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .camera-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .camera-list {
+        grid-template-columns: 1fr;
+    }
+}

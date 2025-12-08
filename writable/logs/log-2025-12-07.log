@@ -1,0 +1,12 @@
+CRITICAL - 2025-12-07 23:11:51 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xamppnew\htdocs\coba\app\Config\Routes.php on line 13 and at least 2 expected
+[Method: GET, Route: kat_kamera]
+in SYSTEMPATH\Router\RouteCollection.php on line 1050.
+ 1 APPPATH\Config\Routes.php(13): CodeIgniter\Router\RouteCollection->get('/kat_kamera')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xamppnew\\htdocs\\coba\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xamppnew\\htdocs\\coba\\public\\index.php')

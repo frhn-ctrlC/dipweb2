@@ -10,7 +10,7 @@ var ciDebugBar = {
     init: function () {
         this.toolbarContainer = document.getElementById("toolbarContainer");
         this.toolbar = document.getElementById("debug-bar");
-        this.icon = document.getElementById("debug-icon");
+        this.icon = document.getElementById("");
 
         ciDebugBar.createListeners();
         ciDebugBar.setToolbarState();
@@ -24,7 +24,7 @@ var ciDebugBar = {
             .getElementById("debug-bar-link")
             .addEventListener("click", ciDebugBar.toggleToolbar, true);
         document
-            .getElementById("debug-icon-link")
+            .getElementById("-link")
             .addEventListener("click", ciDebugBar.toggleToolbar, true);
 
         historyLoad = this.toolbar.getElementsByClassName("ci-history-load");

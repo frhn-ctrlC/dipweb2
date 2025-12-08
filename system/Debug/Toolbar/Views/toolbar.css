@@ -6,7 +6,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-#debug-icon {
+# {
   bottom: 0;
   position: fixed;
   right: 0;
@@ -19,16 +19,16 @@
   text-align: center;
   cursor: pointer;
 }
-#debug-icon a svg {
+# a svg {
   margin: 8px;
   max-width: 20px;
   max-height: 20px;
 }
-#debug-icon.fixed-top {
+#.fixed-top {
   bottom: auto;
   top: 0;
 }
-#debug-icon .debug-bar-ndisplay {
+# .debug-bar-ndisplay {
   display: none;
 }
 
@@ -352,15 +352,15 @@
     overflow-x: auto;
   }
 }
-#debug-icon {
+# {
   background-color: #FFFFFF;
   box-shadow: 0 0 4px #DFDFDF;
   -moz-box-shadow: 0 0 4px #DFDFDF;
   -webkit-box-shadow: 0 0 4px #DFDFDF;
 }
-#debug-icon a:active,
-#debug-icon a:link,
-#debug-icon a:visited {
+# a:active,
+# a:link,
+# a:visited {
   color: #DD8615;
 }
 
@@ -465,15 +465,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  #debug-icon {
+  # {
     background-color: #252525;
     box-shadow: 0 0 4px #DFDFDF;
     -moz-box-shadow: 0 0 4px #DFDFDF;
     -webkit-box-shadow: 0 0 4px #DFDFDF;
   }
-  #debug-icon a:active,
-  #debug-icon a:link,
-  #debug-icon a:visited {
+  # a:active,
+  # a:link,
+  # a:visited {
     color: #DD8615;
   }
   #debug-bar {
@@ -577,15 +577,15 @@
     color: #434343;
   }
 }
-#toolbarContainer.dark #debug-icon {
+#toolbarContainer.dark # {
   background-color: #252525;
   box-shadow: 0 0 4px #DFDFDF;
   -moz-box-shadow: 0 0 4px #DFDFDF;
   -webkit-box-shadow: 0 0 4px #DFDFDF;
 }
-#toolbarContainer.dark #debug-icon a:active,
-#toolbarContainer.dark #debug-icon a:link,
-#toolbarContainer.dark #debug-icon a:visited {
+#toolbarContainer.dark # a:active,
+#toolbarContainer.dark # a:link,
+#toolbarContainer.dark # a:visited {
   color: #DD8615;
 }
 #toolbarContainer.dark #debug-bar {
@@ -693,15 +693,15 @@
   color: #fff;
 }
 
-#toolbarContainer.light #debug-icon {
+#toolbarContainer.light # {
   background-color: #FFFFFF;
   box-shadow: 0 0 4px #DFDFDF;
   -moz-box-shadow: 0 0 4px #DFDFDF;
   -webkit-box-shadow: 0 0 4px #DFDFDF;
 }
-#toolbarContainer.light #debug-icon a:active,
-#toolbarContainer.light #debug-icon a:link,
-#toolbarContainer.light #debug-icon a:visited {
+#toolbarContainer.light # a:active,
+#toolbarContainer.light # a:link,
+#toolbarContainer.light # a:visited {
   color: #DD8615;
 }
 #toolbarContainer.light #debug-bar {

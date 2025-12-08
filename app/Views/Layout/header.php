@@ -20,17 +20,43 @@
             </div>
             <div class="nav-center">
                 <ul class="nav-menu">
-                    <li class=""><a href="#">Beranda</a></li>
-                    <li class=""><a href="#">Kategori</a></li>
+                    <li class=""><a href="/">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Kategori ▾</a>
+                        <ul class="dropdown-menu">
+                    <li><a href="/kamera">Kamera</a></li>
+                    <li><a href="/lighting">Lighting</a></li>
+                    <li><a href="/modifier">Modifier</a></li>
+                </ul>
+</li>
+
                     <li class=""><a href="#">Koleksi</a></li>
                     <li class=""><a href="#">Lokasi</a></li>
                 </ul>
             </div>
-            <div class="nav-right">
+
+            <!-- <div class="nav-right">
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
                     <span>🔍</span>
+                </div> -->
+
+                <!-- <div class="nav-right">
+                <form action="/search" method="get" class="search-bar">
+                    <input type="text" name="q" placeholder="Search">
+                    <button class="btn-search" type="submit">🔍</button>
+                </form>
+                </div> -->
+
+                <div class="nav-right">
+                    <form action="/search" method="get" class="search-bar">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" name="q" placeholder="Search">
+                    </form>
                 </div>
+
+
+
                 <div class="user-icon">
                     <a href="#"><span>👤</span></a>
                 </div>
@@ -51,7 +77,32 @@
             </div>
         </div> -->
         </nav>
-        
-        <div >
-            <?= $this->rendersection('content'); ?>
-        </div>
+<div>
+    <?= $this->rendersection('content'); ?>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector('.dropdown-toggle');
+    const menu = document.querySelector('.dropdown-menu');
+    const dropdown = document.querySelector('.dropdown');
+
+    if (toggle && menu && dropdown) {
+        toggle.addEventListener('click', function(e){
+            e.preventDefault();
+            menu.classList.toggle('show');
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e){
+            if (!dropdown.contains(e.target)) {
+                menu.classList.remove('show');
+                dropdown.classList.remove('open');
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
